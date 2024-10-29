@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background-image: url('/img source/bg web.png'); /*diganti bg*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #133E87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav div img {
+    width: 60px;
+}
+
+.text-logo {
+    text-decoration: none;
+    font-size: 45px;
+    font-family: Verdana;
+    color: white;
+    font-weight: 600;
+    margin-right: 20%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Verdana;
+    color: white;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: color 300ms, border-bottom 300ms;
+}
+
+nav ul li a:hover {
+    color: #CBDCEB;
+    border-bottom: 1px solid #CBDCEB;
+}
+
+.menu-icon {
+    font-size: 28px;
+    display: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: tahoma;
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #133e87;
+    text-align: center;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 40px;
+    text-align: center; 
+    font-family: verdana;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    color: #133E87;
+    margin-bottom: 15px;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #608BC1;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #133E87;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .text-logo {
+        display: none;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .benefit {
+        width: 100%; /* Full width on small screens */
+    }
+}
